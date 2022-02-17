@@ -3,7 +3,7 @@
 1. [Description](#Description)
 2. [Getting-Started](#Getting-Started)
 3. [Overview](#Overview)
-4. 
+4. [Development](#Development)
 
 
 
@@ -69,7 +69,7 @@ $ npm run start
 
 
 
-![intro](postmission-readme.assets/intro.gif)
+![intro](README.assets/intro.gif)
 
 - 공연 시작 전, 모든 조명은 소등되며 관객들의 기대감은 높아집니다.
 - 기호에 따라 ON/OFF 버튼을 통해 조명을 키고 끌 수 있으며
@@ -79,8 +79,8 @@ $ npm run start
 
 #### 홈 화면
 
-| ![image-20220217204657989](postmission-readme.assets/image-20220217204657989.png) | ![image-20220217204626836](postmission-readme.assets/image-20220217204626836.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![home-logout](README.assets/home-logout.png) | ![home-login](README.assets/home-login.png) |
+| --------------------------------------------- | ------------------------------------------- |
 
 - 첫 회원가입 후, 캐릭터가 설정돼있지 않은 상태에서는 홈 화면에 그림자 물체가 보입니다.
 - 부캐 테스트를 통해 홈 화면에 보일 캐릭터를 획득할 수 있습니다.
@@ -89,8 +89,8 @@ $ npm run start
 
 #### 프로필 페이지
 
-| ![profile](postmission-readme.assets/profile.gif) | ![image-20220217210300385](postmission-readme.assets/image-20220217210300385.png) |
-| ------------------------------------------------- | ------------------------------------------------------------ |
+| ![profile](README.assets/profile.gif) | ![profile](README.assets/profile.png) |
+| ------------------------------------- | ------------------------------------- |
 
 - 프로필 사진 업로드 및 닉네임/비밀번호를 수정할 수 있습니다.
 
@@ -98,8 +98,8 @@ $ npm run start
 
 #### 부캐 테스트
 
-| ![characterTest](postmission-readme.assets/characterTest.gif) | ![image-20220217210602861](postmission-readme.assets/image-20220217210602861.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![characterTest](README.assets/characterTest.gif) | ![character](README.assets/character.png) |
+| ------------------------------------------------- | ----------------------------------------- |
 
 - 테스트를 통해 나에게 맞는 뮤지컬 캐릭터를 획득할 수 있습니다.
 - 획득한 캐릭터는 나의 부캐로 홈 화면에 보이게 됩니다.
@@ -108,8 +108,8 @@ $ npm run start
 
 #### 트로피
 
-| ![image-20220217210703413](postmission-readme.assets/image-20220217210703413.png) | ![image-20220217210737530](postmission-readme.assets/image-20220217210737530.png) |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![trophy1](README.assets/trophy1.png) | ![trophy2](README.assets/trophy2.png) |
+| ------------------------------------- | ------------------------------------- |
 
 - 획득할 수 있는 트로피의 종류를 볼 수 있습니다.
 - 미션을 달성하면 트로피를 받을 수 있습니다.
@@ -118,8 +118,8 @@ $ npm run start
 
 #### 티켓북
 
-| ![tickecbook](postmission-readme.assets/tickecbook.gif) | ![image-20220217211040532](postmission-readme.assets/image-20220217211040532.png) |
-| ------------------------------------------------------- | ------------------------------------------------------------ |
+| ![tickecbook](README.assets/tickecbook-5102354.gif) | ![ticketbook](README.assets/ticketbook-5102344.png) |
+| --------------------------------------------------- | --------------------------------------------------- |
 
 - 관람하거나 앞으로 관람하게 될 뮤지컬 후기를 작성할 수 있습니다.
 - 날짜 순으로 정렬되며, 실시간 뮤지컬 검색이 가능합니다.
@@ -130,8 +130,8 @@ $ npm run start
 
 #### 달력
 
-| ![calander](postmission-readme.assets/calander.gif) | ![image-20220217211248358](postmission-readme.assets/image-20220217211248358.png) |
-| --------------------------------------------------- | ------------------------------------------------------------ |
+| ![calandar](README.assets/calandar.gif) | ![calendar](README.assets/calendar.png) |
+| --------------------------------------- | --------------------------------------- |
 
 - 티켓북을 달력 형식으로 볼 수 있습니다.
 - 티켓북보다는 간단한 세부 정보를 보여줍니다.
@@ -150,19 +150,19 @@ $ npm run start
 
 ### Language & Tools
 
-![스크린샷 2022-02-17 오전 11.32.35](postmission-readme.assets/스크린샷 2022-02-17 오전 11.32.35.png)
+![languages](README.assets/languages.png)
 
 
 
 ### Components
 
-![components](postmission-readme.assets/components.jpg)
+![components](README.assets/components.jpg)
 
 
 
 ### ERD
 
-![erd](postmission-readme.assets/erd.png)
+![erd](README.assets/erd.png)
 
 
 
