@@ -54,15 +54,6 @@ $ npm run start
 
 
 
-#### Server
-
-```bash
-```
-
-
-
-
-
 ## Overview
 
 #### 인트로 화면
@@ -148,7 +139,7 @@ $ npm run start
 
 
 
-### Language & Tools
+### Language & Tools
 
 ![languages](README.assets/languages.png)
 
