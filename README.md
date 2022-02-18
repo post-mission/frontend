@@ -163,3 +163,4 @@ $ npm run start
 ## Issues
 
 - [류완수](./README.assets/rws.md)
+- [위연주](./README.assets/yeonju.md)
