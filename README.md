@@ -4,6 +4,7 @@
 2. [Getting-Started](#Getting-Started)
 3. [Overview](#Overview)
 4. [Development](#Development)
+4. [Issues](#Issues)
 
 
 
@@ -151,9 +152,6 @@ $ npm run start
 
 
 
-### ERD
+## Issues
 
-![erd](README.assets/erd.png)
-
-
-
+- [류완수](./README.assets/rws.md)
