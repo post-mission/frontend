@@ -1,3 +1,11 @@
+# Postmission Front
+
+[move to backend](https://github.com/post-mission/backend)
+
+- 서버 관련 내용은 backend respository에 정리 돼 있습니다.
+
+
+
 ## Contents
 
 1. [Description](#Description)
