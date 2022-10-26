@@ -1,0 +1,66 @@
+.home {
+  position: relative;
+  // top: 0;
+  // left: 0;
+  height: calc(100vh - 56px);
+  // // width: 100vw;
+  // width: 50vw;
+  background-image: url("../../public/assets/stage_long_lighten.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  .Character {
+    position: absolute;
+    bottom: 25vh;
+    width: 25%;
+  }
+  .to-board {
+    position: absolute;
+    bottom: 45vh;
+    left: 60%;
+    z-index: 1;
+    width: 100px;
+    height: 10%;
+  }
+}
+
+.home h1 {
+  position: absolute;
+  top: 10vh;
+}
+
+.SignIn {
+  position: absolute;
+  top: 90vh;
+}
+
+.SignOut {
+  position: absolute;
+  top: 90vh;
+}
+
+.SignUp {
+  position: absolute;
+  top: 85vh;
+}
+
+@media (max-width: 576px) {
+  .home {
+    .Character {
+      position: absolute;
+      bottom: 30vh;
+      width: 30%;
+    }
+    .to-board {
+      position: absolute;
+      top: 28vh;
+      left: 55%;
+      z-index: 1;
+      width: 100px;
+      height: 10%;
+    }
+  }
+}

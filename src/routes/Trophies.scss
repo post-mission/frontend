@@ -1,0 +1,43 @@
+@import '../style.scss';
+
+.trophy-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.trophy-item-wrapper {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    opacity: 0.2;
+    
+    .trophy-img {
+        width: 8rem;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        color: $main-font-color;
+    }
+}
+
+.trophy-item-wrapper.own {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 426px) {
+    .trophy-wrapper {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    .trophy-item-wrapper {
+        padding: 0.5rem;
+    }
+}

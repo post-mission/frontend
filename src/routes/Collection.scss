@@ -1,0 +1,73 @@
+.container {
+  display: grid;
+}
+
+//AutoComplete
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  // width: calc(300px + 1rem);
+}
+.suggestions li {
+  padding: 0.5rem;
+}
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #1b5e1f;
+  color: rgb(241, 237, 216);
+  cursor: pointer;
+  font-weight: 700;
+}
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+#header {
+  width:100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+//CollectionList
+
+.review_wrapper {
+  // // display: flex;
+  // float: left;
+
+  // background-color: rebeccapurple;
+}
+.musicalCard_wrapper {
+  width: 50%;
+  padding: 10px;
+  border: 3px solid rgb(190, 183, 148);
+  border-radius: 12px;
+  margin: auto;
+}
+
+.musicalCard_img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.musicalCard__button:hover {
+  color: white;
+  background-color: #f1b668;
+  transform: translate(2px, -2px);
+}

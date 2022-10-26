@@ -1,0 +1,32 @@
+/* variables */
+$bg-color: rgb(245, 240, 220);
+$bg-color-shadow: rgb(219, 211, 177);
+$bg-color-shadow-dark: rgb(190, 183, 148);
+$main-font-color: rgb(53, 51, 43);
+$sub-font-color: rgb(105, 101, 80);
+$sub-font-color-bright: rgb(241, 237, 216);
+$point-color: #1b5e1f;
+$star-color: #fbb03b;
+$scrollbar-width: calc(100vw - 100%);
+
+.SignInForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .InputForm {
+    border: 1px solid black;
+    margin-top: 4px;
+    background-color: $bg-color-shadow-dark;
+
+    input {
+      border: none;
+    }
+  }
+  .btn {
+    background-color: $point-color;
+    border: none;
+    color: $sub-font-color-bright;
+    margin-top: 4px;
+  }
+}

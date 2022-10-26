@@ -1,0 +1,198 @@
+@import "./style.scss";
+
+// Home
+
+// SignIn
+.sign-in-form {
+  // padding-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: $point-color;
+    margin-bottom: 2rem;
+  }
+
+  .input-form {
+    // border: 1px solid $point-color;
+    margin-top: 4px;
+    background-color: $bg-color-shadow-dark;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+
+    input {
+      border: none;
+      margin-right: 0.8rem;
+      flex: 1;
+      width: auto;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .d-grid {
+    margin-top: 2rem;
+
+    .my-btn {
+      height: 2rem;
+    }
+  }
+}
+
+.social-kakao-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#socialKakaoBtn {
+  background-image: url(../public/assets/kakao_login_button_img.png);
+  height: 45px;
+  width: 183px;
+  object-fit: none;
+  border: none;
+}
+
+// SignUp
+.sign-up-form {
+  // padding-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: $point-color;
+    margin-bottom: 2rem;
+  }
+  input {
+    margin-top: 4px;
+    border: 1px solid $point-color;
+    flex: 1;
+    width: auto;
+  }
+  input[type="checkbox"] {
+    margin: 0.25rem;
+  }
+  .img-box {
+    height: 120px;
+    width: 120px;
+    background-repeat: none;
+    background-size: cover;
+  }
+  .btn {
+    background-color: $point-color;
+    border: none;
+    color: $sub-font-color-bright;
+  }
+  .invalid-input {
+    color: red;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    max-width: 256px;
+    font-size: smaller;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// findPW
+.find-pw-form {
+  // padding-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: $point-color;
+    margin-bottom: 2rem;
+  }
+  input {
+    margin-top: 4px;
+    border: 1px solid $point-color;
+    flex: 1;
+    width: auto;
+  }
+  .btn {
+    margin-top: 2rem;
+    background-color: $point-color;
+    border: none;
+    color: $sub-font-color-bright;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+
+// changePW
+.change-pw-form {
+  // padding-top: 56px;
+  // margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: $point-color;
+    margin-bottom: 2rem;
+  }
+  input {
+    margin-top: 4px;
+    border: 1px solid $point-color;
+  }
+  .btn {
+    margin-top: 2rem;
+    background-color: $point-color;
+    border: none;
+    color: $sub-font-color-bright;
+  }
+}
+
+//KaKaoAuthRedirectContainer
+#KaKaoAuthRedirectContainer {
+  text-align: center;
+  margin-top: 6rem;
+
+  p {
+    color: $point-color;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+.loading-spinner {
+  width: 1.5rem !important;
+  height: 1.5em !important;
+  fill: $point-color;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+//EditInfo
+#profileImageInput {
+  background-color: $bg-color-shadow;
+  border: none;
+}
+
+.profile-image-submit-btn {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}

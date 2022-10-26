@@ -1,0 +1,61 @@
+@import '../../style.scss';
+
+.comment-list {
+    margin: 0;
+    padding: 1rem;
+    background-color: $bg-color-shadow;
+
+    .comment-list-item {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $bg-color-shadow-dark;
+        padding: 0.5rem;
+
+        // span {
+        //     display: block;
+        // }
+
+        .comment-description {
+            flex: 1;
+        }
+
+        .comment-date {
+            font-size: 0.75rem;
+            color: $bg-color-shadow-dark;
+            margin-left: 0.75rem;
+        }
+
+        .delete-btn {
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.comment-textarea-form {
+    background-color: $bg-color-shadow-dark;
+    padding: 0.5rem;
+    display: flex;
+
+    .comment-textarea {
+        background-color: $sub-font-color-bright;
+        border: none;
+
+        min-height: 6rem;
+        height: 6rem;
+        flex: 1;
+    }
+    
+    .comment-textarea::placeholder {
+        color: $bg-color-shadow-dark;
+    }
+
+    .comment-create-button {
+        height: 3rem;
+        width: 4rem;
+    }
+}

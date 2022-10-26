@@ -1,0 +1,166 @@
+.intro,
+.box-off {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // height: 100vh;
+  // width: 50vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: default;
+}
+
+.box-off {
+  // background: url("../../public/assets/stage.png");
+  /* background: url("../../public/assets/stage_long_lighten.svg"); */
+  background: url("https://cdn.dribbble.com/users/454765/screenshots/15300792/media/3b08d07aec10e929d9e3275b8d3e6f41.gif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  .title {
+    position: absolute;
+    top: 10vh;
+    color: white;
+    font-size: 4rem;
+  }
+  .signIn {
+    position: absolute;
+    top: 85vh;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .signUp {
+    position: absolute;
+    top: 80vh;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.box-off:nth-child(1) {
+  filter: blur(8px);
+  background: black;
+  button {
+    background-color: rgb(245, 240, 220);
+    border: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 1.2rem;
+  }
+}
+
+.box-off:nth-child(2) {
+  clip-path: circle(100px at var(--x) var(--y));
+  button {
+    background-color: rgb(245, 240, 220);
+    border: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 1.2rem;
+  }
+}
+
+.intro,
+.box-on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // height: 100vh;
+  // width: 50vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: default;
+}
+
+.box-on {
+  // background: url("../../public/assets/stage.png");
+  /* background: url("../../public/assets/stage_long_lighten.svg"); */
+  background: url("https://cdn.dribbble.com/users/454765/screenshots/15300792/media/3b08d07aec10e929d9e3275b8d3e6f41.gif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  .title {
+    position: absolute;
+    top: 10vh;
+    color: white;
+    font-size: 4rem;
+  }
+  .signIn {
+    position: absolute;
+    top: 85vh;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .signUp {
+    position: absolute;
+    top: 80vh;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.box-on:nth-child(1) {
+  button {
+    background-color: rgb(245, 240, 220);
+    border: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 1.2rem;
+  }
+}
+
+.box-on:nth-child(2) {
+  clip-path: circle(100px at var(--x) var(--y));
+  button {
+    background-color: rgb(245, 240, 220);
+    border: none;
+    border-radius: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: 1.2rem;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 23px rgba(0, 0, 0, 0.5);
+  top: -100px;
+  left: -100px;
+  transform: translate(var(--x), var(--y));
+  pointer-events: none;
+}

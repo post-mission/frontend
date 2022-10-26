@@ -1,0 +1,165 @@
+@import '../style.scss';
+
+.user-info-basic {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  margin-top: 2rem;
+  
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-image {
+      margin: 0;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+  }
+
+  &__follow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+      margin: 1rem;
+      text-align: center;
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .profile-image {
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 80px;
+  }
+}
+
+.first-line {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  color: $sub-font-color-bright;
+
+  .my-btn {
+    color: $sub-font-color-bright;
+    flex: 1;
+    padding: 0.25rem 0;
+    margin: 0 1.25rem;
+  }
+
+  .icon-btn {
+    background: transparent;
+    border: none;
+  }
+
+  svg {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  margin-right: 12px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.shelf {
+  margin: 2rem 0;
+}
+
+.first-shelf {
+  display: flex;
+  align-items: center;
+
+  .character-info-wrapper {
+    flex: 1;
+    margin-left: 0.25rem;
+    
+    h3 {
+      margin-bottom: 0;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .my-character {
+    // position: absolute;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    height: 150px;
+  }
+  // svg {
+  //   font-size: 2rem;
+  //   margin-right: 12px;
+  // }
+}
+
+.second-shelf {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100px;
+  
+  .trophies {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .trophy {
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+    width: 20%;
+    height: 100px;
+  }
+}
+
+// .to-button {
+//   display: grid;
+//   font-size: 2rem;
+//   justify-content: end;
+//   margin-top: 2rem;
+// }
+
+.third-shelf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin: 0;
+
+  .ticketbook, .calender {
+    margin: 1rem;
+  }
+
+  .ticketbook {
+    width: 160px;
+  }
+
+  .calender {
+    width: 128px;
+  }
+}

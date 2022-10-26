@@ -1,0 +1,17 @@
+.sign-up-form {
+  // background-color: #fbf6d1;
+  // height: 100vh;
+  // width: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input {
+    margin-top: 4px;
+    flex: 1;
+  }
+  .btn {
+    background-color: #1b5e1f;
+    border: none;
+    color: rgb(241, 237, 216);
+  }
+}

@@ -1,0 +1,709 @@
+/* import */
+
+@import 'react-big-calendar/lib/sass/styles';
+@import './style.scss';
+
+
+/* starRating */
+.star-rating-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.125rem;
+    cursor: pointer;
+}
+.cls-1{
+    fill: none;
+    stroke: $star-color;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+.full-star {
+    fill: $star-color;
+}
+
+
+/* calendar event */
+.rbc-row {
+    display: none;
+
+    .rbc-row-segment {
+        height: 92px;
+    }
+}
+
+.rbc-row:first-child, .rbc-row:nth-child(2) {
+    display: flex;
+}
+
+.rbc-event {
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin: 0;                 // 반응형 아님
+    background-color: $bg-color-shadow;
+    // background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MTJfMjEz%2FMDAxNjI2MDYwMjg3MDIw.nv4W-gxa1C7oVuT0v3YcHfzXbZ6Pjl0EHumLXt_ooAcg.xM1QACg0Lw9FA8y4Hxad3SBZAHasFA5ZhMA9dbMmpZsg.JPEG.roieye0915%2F%25BE%25C60.jpg&type=sc960_832);
+    // background-size: cover;
+    // overflow: hidden;
+    border-radius: 0;
+    color: $sub-font-color-bright;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    min-height: 100%;
+
+    .rbc-event-content {
+        color: transparent;
+    }
+}
+
+// .rbc-event.rbc-selected {
+//     background: $bg-color-shadow;
+// }
+
+.rbc-day-bg, .rbc-month-row {
+    cursor: pointer;
+}
+
+.rbc-day-bg.rbc-off-range-bg {
+    background: $bg-color-shadow;
+}
+
+.rbc-today {
+    background-color: $point-color;
+}
+
+.rbc-now, .rbc-current {
+    color: $sub-font-color-bright;
+}
+
+.rbc-date-cell.rbc-now {
+    font-weight: normal;
+}
+
+.rbc-toolbar {
+    .rbc-btn-group {
+        button {
+            border: 1px solid $bg-color-shadow-dark;
+            border-radius: 0;
+        }
+    
+        button:hover {
+            background-color: $bg-color-shadow;
+        }
+    
+        button:active, button:focus {
+            background-color: $bg-color-shadow-dark;
+        }
+    }
+}
+
+
+.rbc-calendar a {
+    cursor: default;
+    pointer-events: none;
+}
+
+.rbc-show-more {
+    font-weight: normal;
+    color: $point-color;
+    text-decoration: none;
+}
+
+
+
+
+/* ticket */
+
+/* ticket */
+
+.ticket {
+    // background-image: url(../public/assets/ticket2.svg);
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 18rem;
+    height: 8rem;
+  
+    cursor: pointer;
+  
+    h2 {
+      font-weight: normal;
+      font-size: 1.25rem;
+    }
+  
+    h2,
+    p {
+      margin: 0.125rem;
+    }
+  
+    &__ticket-info {
+      color: $sub-font-color-bright;
+    }
+  
+    &__inner-wrapper {
+      border-left: 1px solid $sub-font-color-bright;
+      border-right: 1px solid $sub-font-color-bright;
+      position: inherit;
+      z-index: 1;
+      // margin: 0.5rem 1.5rem;
+      width: 13rem;
+      padding: 0.5rem;
+  
+      h2,
+      p {
+        color: $sub-font-color-bright;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  
+    &__ticket-shape {
+      position: absolute;
+    }
+  
+    /* overflow text scroll animation */
+    // .ticketListInfo {
+    //     display: inline-block;
+    //     white-space: nowrap;
+    //     text-overflow: ellipsis;
+  
+    //   }
+    //   .ticketListInfo:hover {
+    //     // animation-play-state: paused;
+    //     animation: floatText 15s infinite linear;
+    //   }
+    //   @keyframes floatText {
+    //     to {
+    //       transform: translateX(-100%);
+    //     }
+    //   }
+  }
+
+
+/* ticket form */
+.board-info {
+padding: 1.5rem;
+justify-content: space-around;
+}
+
+
+#ticketCreateBtn {
+    width: 18rem;
+    height: 8rem;
+    overflow: hidden;
+
+    background: transparent;
+    border: none;
+}
+
+
+.ticket-list-item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    max-height: calc(100vh - 6rem - 56px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    // box-shadow: inset 0 5px 32px -16px rgba(7, 7, 7, 0.363);
+
+    h3 {
+        font-weight: normal;
+        font-size: 1.5rem;
+        color: $point-color;
+    }
+
+    .col {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .col1.month-sep, .col2.month-sep-name {
+        height: 4rem;
+    }
+
+    .month-sep-name {
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .col1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ticket-wrapper, .col1 {
+        height: 9rem;
+    }
+
+    .month-marker {
+        height: 10rem;
+    }
+
+}
+
+
+.ticket-form-info, 
+.ticket-form-review {
+    padding: 3rem;
+
+    input {
+        width: auto;
+    }
+
+    input[type=datetime-local] {
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+    
+    textarea {
+        background-color: $bg-color-shadow-dark;
+        border: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .checkbox-label {
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}
+
+.form-musical-poster {
+    display: block;
+    width: 8rem;
+    min-height: 10rem;
+    background-color: $bg-color-shadow-dark;
+    margin: 0 auto;
+}
+
+img.musical-poster {
+    display: block;
+    width: 12rem;
+    min-height: 15rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ticket-form-info {
+    background-color: $bg-color-shadow;
+
+    #musicalName {
+        margin-bottom: 0;
+    }
+
+    label {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+
+    input {
+        margin: 1rem 0;
+    }
+
+    &__poster-wrapper {
+        margin-bottom: 1.5rem;
+    }
+
+    &__info-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    &__musical-name-label {
+        margin-bottom: 0 !important;
+    }
+
+    &__musical-lists {
+        background-color: $bg-color-shadow-dark;
+        margin-bottom: 0;
+        padding: 0.25rem;
+        min-height: 40px;
+
+        li {
+            list-style-type: none;
+            background-color: $point-color;
+            display: inline-block;
+            box-sizing: content-box;
+            height: 1.25rem;
+            line-height: 1.25rem;
+            // border-radius: 1.125rem;
+            padding: 0.5rem 0.75rem;
+            margin: 0.25rem;
+            color: $sub-font-color-bright;
+
+            button {
+                background-color: transparent;
+                border: none;
+                color: $bg-color-shadow-dark;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__tip {
+        color: $sub-font-color;
+        font-size: 0.875rem;
+    }
+
+    &__casting-label {
+        margin-bottom: 0 !important;
+    }
+
+    
+    .musical-poster {
+        width: 8rem;
+        min-height: 10rem;
+        background-color: $bg-color-shadow-dark;
+        margin: 0 auto;
+    }
+
+    &__musical-actors-wrapper {
+        button {
+        height: 2rem;
+        padding: 0 0.5rem;
+        }
+    }
+
+    #musicalActors {
+        margin: 0.5rem 0;
+        background-color: $sub-font-color-bright;
+        width: 60%;
+    }
+
+    .color-palette {
+        background-color: $bg-color-shadow-dark;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+
+        .color-chip {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin: 0.5rem;
+
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        .color-chip.selected {
+            outline: 4px solid $point-color;
+        }
+    }
+
+    .kakao-noti-wrapper {
+        grid-column: 1/3;
+        margin-top: 2rem;
+    }
+}
+
+#musicalNamelist {
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    position: absolute;
+    background-color: $sub-font-color-bright;
+    max-height: 24rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 10px 10px 10px rgba(83, 83, 83, 0.479);
+    cursor: pointer;
+    
+    display: none;
+
+    li {
+        list-style-type: none;
+        padding: 0.25rem;
+    }
+
+}
+
+#musicalNamelist::-webkit-scrollbar-thumb {
+    background-color: $point-color;
+}
+
+#musicalNamelist.show {
+    display: block;
+}
+
+
+.ticket-form-review {
+    padding-bottom: 0;
+
+    section {
+        margin: 2rem 0;
+    }
+
+    section:first-child {
+        margin: 0;
+    }
+
+    #ImgPreview {
+        background-color: $bg-color-shadow-dark;
+        padding: 0.5rem;
+        padding-top: 0.75rem;
+        box-sizing: border-box;
+        width: 100%;
+        height: 9.5rem;
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            position: relative;
+            margin: 0 0.5rem;
+
+            button {
+                position: absolute;
+                right: 0;
+                height: 1.25rem;
+                line-height: 0.25rem;
+            }
+        }
+    }
+
+    #ImgPreview::-webkit-scrollbar-thumb {
+        background-color: $point-color;
+        
+    }
+
+    #description {
+        textarea {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* preview images */
+    .preview-images {
+        height: 7rem;
+    }
+
+    #attachFileLabel {
+        padding: 0 0.5rem;
+
+        label {
+            margin: 0;
+            color: $sub-font-color-bright;
+        }
+
+    }
+
+    .radio-label {
+        background-color: $sub-font-color;
+        color: $sub-font-color-bright;
+        width: 10rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .radio-label.selected {
+        background-color: $point-color;
+    }
+
+    #open, #private {
+        display: none;
+    }
+
+    .radio-group {
+        margin-top: 2rem;
+    }
+
+    .spoiler-label-elem {
+        margin-top: 1rem;
+        height: 2rem;
+    }
+    
+}
+
+#spoilerCheck, #kakaoNotification {
+    width: auto;
+}
+
+.create-form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#createFormButton {
+    width: 12rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+#openOrNot {
+    margin-bottom: 0;
+}
+
+
+#ticketDetailInfo {
+    background-color: $bg-color-shadow;
+}
+
+.ticket-detail-info {
+    &__poster-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
+.ticket-detail-review {
+
+    &__user-images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__user-image {
+        height: 8rem;
+        margin: 0;
+        display: block;
+    }
+
+    section:first-child {
+        margin-top: 0;
+    }
+
+    section {
+        margin: 2rem 0;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.ticket-detail-info, 
+.ticket-detail-review,
+.ticket-detail-comment,
+.ticket-detail-btn-group {
+    padding: 3rem;
+
+    label {
+        margin-right: 0.5rem;
+    }
+}
+
+label.kakao-noti-label {
+    display: block;
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.ticket-detail-btn-group {
+    text-align: right;
+    // padding-top: 0;
+    margin: 0 0.5rem;
+
+    button:first-child {
+        margin: 0.5rem;
+    }
+
+    button {
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+/* modal */
+
+.modal-dialog {
+    .modal-content {
+        background-color: $bg-color;
+        border-radius: 0;
+        word-break: keep-all;
+
+        .modal-header {
+            border-bottom: 1px solid $bg-color-shadow-dark;;
+        }
+        .modal-body {
+            padding: 0;
+        }
+    }
+}
+
+.ticket-calendar-modal {
+    &__inner-block:first-child {
+        border: none;
+    }
+
+    &__inner-block:last-child {
+        background-color: $bg-color-shadow;
+    }
+
+    &__inner-block {
+        border-top: 1px solid $bg-color-shadow-dark;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        h4, p {
+            margin: 0;
+        }
+    }
+}
+
+.ticket-delete-modal {
+    padding: 1rem;
+    text-align: center;
+
+    button {
+        margin: 0.5rem;
+        height: 3rem;
+        width: 6rem;
+    }
+
+    &__delete-button {
+        background-color: $sub-font-color !important;
+    }
+
+}
+
+.ticket-delete-modal-header {
+    p {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+
+// .ticketBook-header {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0 0.75rem;
+//     box-sizing: border-box;
+//     height: 3rem;
+// }
+
+
+@media screen and (max-width: 426px) {
+    .ticket-form-info {
+        &__info-wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        input {
+            margin: 0;
+        }
+
+        .my-label {
+            margin: 0.5rem 0;
+        }
+    }
+
+}
